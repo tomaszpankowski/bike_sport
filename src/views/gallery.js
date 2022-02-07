@@ -2,7 +2,6 @@ import React,{Component} from "react";
 import Container from "../../node_modules/react-bootstrap/Container";
 import GalleryS1 from "../components/gallery-s1";
 import GalleryS2 from "../components/gallery-s2";
-
 class Gallery extends Component{
     render(){
         return(        

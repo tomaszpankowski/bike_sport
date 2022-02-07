@@ -2,13 +2,19 @@ import {Redirect} from "react-router-dom";
 import Comingsoon from "./views/comingsoon";
 import Contact from "./views/contact";
 import Error from "./views/error";
+import Event from "./views/event";
+import Gallery from "./views/gallery";
+import Home from "./views/home";
 import Login from "./views/login";
 import PrivacyPolicy from "./views/privacy";
 import Register from "./views/register";
 
 const appCfg = {
     routes:[
-        {navItem:true, exact:true, path:"/",name:"Comingsoon",view:<Comingsoon/>},
+        {navItem:true, exact:true, path:"/",name:"Home",view:<Home/>},
+        {navItem:true, exact:true, path:"/event",name:"Event",view:<Event/>},
+        {navItem:true, exact:true, path:"/gallery",name:"Gallery",view:<Gallery/>},
+        {navItem:false, exact:true, path:"/comingsoon",name:"Comingsoon",view:<Comingsoon/>},
         {navItem:true, exact:true, path:"/contact",name:"Contact",view:<Contact/>},
         {navItem:true, exact:true, path:"/login",name:<span className="fa fa-user-circle"></span>,view:<Login backLink={{name:" Register now!",href:"/register"}}/>},
         {navItem:false, exact:true, path:"/register",name:"Register",view:<Register backLink={{name:" Login now!",href:"/login"}}/>},

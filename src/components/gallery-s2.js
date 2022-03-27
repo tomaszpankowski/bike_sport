@@ -1,32 +1,26 @@
 import React,{Component} from "react";
 import Container from "../../node_modules/react-bootstrap/Container";
 import Row from "../../node_modules/react-bootstrap/Row";
+import Card from "../../node_modules/react-bootstrap/Card";
 import Col from "../../node_modules/react-bootstrap/Col";
 
 class GalleryS2 extends Component{
     render(){
         return(    
-            <Container fluid className="d-flex bg-secondary minh-50vh align-items-center py-5">
+            <Container fluid className="gallery-s2 d-flex bg-secondary minh-50vh align-items-center py-5 border-top border-dark">
                 <Row className="mx-0 w-100">
                     <Col xs={12} md={6} className="minh-25vh d-none d-md-block"></Col>
                     <Col xs={12} md={6} className="minh-50vh d-flex align-items-center">
-                        <div className="w-100 text-center text-md-start pt-5 text-shadow">
-                            <h5 className="text-white">
-                                Lorem ipsum
-                            </h5>
-                            <h2 className="dispaly-6 fw-bold text-white-50 text-shadow">
-                                Dolor sit amet         
+                        <Card className="w-100 text-center text-md-start bg-brown border border-dark p-4 opacity-9">
+                            <h2 className="dispaly-6 fw-bold text-white opacity-7 text-shadow">
+                                Unde omnis iste
                             </h2>
                             <p className="text-white">
-                                Sed do eiusmod tempor incididunt ut labore et dolore magna 
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                Duis aute irure dolor in reprehenderit in voluptate velit 
-                                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-                                occaecat cupidatat non proident, sunt in culpa qui officia 
-                                deserunt mollit anim id est laborum.      
+                                Natus error sit voluptatem accusantium doloremque laudantium, 
+                                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis 
+                                et quasi architecto beatae vitae dicta sunt explicabo. 
                             </p>
-                        </div>
+                        </Card>
                     </Col>
                 </Row>
             </Container>
